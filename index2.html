@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Luís Martinez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af60b5f2fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <!--Bloque de nav-->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#Sobre_mi">Sobre mí</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li id="logo"><a href="#inicio"><img src="./Porfolio/img/icono.png" alt="Icono-rayo" height="60px"></a></li>
+            <li><a href="#Experiencias">Skills</a></li>
+            <li><a href="#contactar">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--Bloque de inicio-->
+    <article>
+        <section id="inicio">
+            <h2 class="poppins-light">Luís Martinez</h2>
+            <h3 class="hastag">#Desarrollador web</h3>
+            <h3 class="hastag">#Músico</h3>
+            <ul id="redes-sociales">
+                <li><a href="https://www.instagram.com/sanyu_hm/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jereminth-mu%C3%B1oz-61726a186/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </section>
+        <!--Fin del bloque de inicio-->
+        <!--Bloque de sobre mí-->
+        <section id="Sobre_mi">
+            <div id="Imag_sobremi"><img src="./Porfolio/img/Person.png" alt="Foto de Luís Martinez" height="250px"></div>
+            <div id="contenido_sobremi">
+                <h2>Sobre mí</h2>
+                <p>La tecnología ha <strong>revolucionado</strong> la manera en que vivimos y trabajamos en el siglo XXI. Desde la comunicación instantánea a través de las redes sociales hasta la automatización de tareas complejas en diversas industrias, los avances tecnológicos han mejorado nuestra eficiencia y calidad de vida.</p>
+                <p> Sin embargo, esta rápida evolución también plantea desafíos significativos, como la necesidad de actualizar constantemente nuestras habilidades y la preocupación por la privacidad y la seguridad de la información. <span>En este contexto</span>, es crucial que tanto individuos como organizaciones adopten una actitud proactiva hacia la innovación, <cite>equilibrando los beneficios de la tecnología con una gestión responsable de sus riesgos.</cite></p>
+                <div class="masinfo"><button type="button">Más Info</button></div>
+            </div>
+        </section>
+        <!--Fin del bloque de sobre mí-->
+        <!--Bloque de portfolio-->
+        <section id="Portfolio">
+            <h2>Portfolio</h2>
+            <h3>Una mirada más allá del texto</h3>
+            <div class="filaportfolio">
+                <div class="card">
+                    <iframe class="fondo-port" width="250" src="https://www.youtube.com/embed/cGvXAAw3Ikk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Música</h3>
+                    <h4>Concierto Benicassim</h4>
+                    <div class="sep"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="masinfo"><button type="button">Más Info</button></div>
+                </div>
+                <!-- Repetir estructura card para cada ítem del portafolio -->
+                <!-- ... -->
+            </div>
+        </section>
+        <!--Fin del bloque de portfolio-->
+        <!--Bloque de experiencias-->
+        <section id="Experiencias">
+            <h2>Experiencia & Skills</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <div class="gridexp">
+                <div class="cardexp">
+                    <h2>Diseño web</h2>
+                    <h3 class="textoizquierda">2018-2020</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul>
+                        <li><img src="./Porfolio/img/tecno_au.png" alt="" height="30px"></li>
+                        <li><img src="./Porfolio/img/tecno_cu.png" alt="" height="30px"></li>
+                        <li><img src="./Porfolio/img/tecno_html.png" alt="" height="30px"></li>
+                    </ul>
+                </div>
+                <!-- Repetir estructura cardexp para cada ítem de experiencia -->
+                <!-- ... -->
+            </div>
+        </section>
+        <!--Fin del bloque de experiencias-->
+        <!--Bloque de contacto-->
+        <section id="contactar">
+            <h2>Contacto</h2>
+            <h3>Envíame tus dudas</h3>
+            <form action="#">
+                <div class="itemform">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" size="32" required>
+                </div>
+                <div class="itemform">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa" minlength="2" maxlength="128" size="32">
+                </div>
+                <div class="itemform">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" minlength="10" maxlength="128" size="32" required>
+                </div>
+                <div class="itemform">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="33" rows="5"></textarea>
+                </div>
+                <div class="itemform">
+                    <input type="submit" name="boton" value="Contactar">
+                </div>
+            </form>
+        </section>
+        <!--Fin del bloque de contacto-->
+    </article>
+    <!--Bloque de pie de página-->
+    <footer></footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        document.body.style.zoom = "150%";
+    </script>
+</body>
+</html>

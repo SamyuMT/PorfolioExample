@@ -1,0 +1,198 @@
+/* Reseteo de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    color: #999;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+/* Nav bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.5);
+    border-bottom: 1px solid white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    height: 60px;
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background-color: #000; /* Color sólido al hacer scroll */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+}
+
+nav ul li {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    color: white;
+    font-size: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    padding: 60px 100px 10px 100px;
+}
+
+i {
+    font-size: 24px;
+}
+
+i:hover {
+    color: #ffc900;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #ffc900;
+}
+
+li {
+    float: left;
+}
+
+#logo {
+    margin: 0 auto;
+}
+
+#inicio {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Sobre_mi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Imag_sobremi {
+    flex: 1;
+    text-align: center;
+}
+
+#contenido_sobremi {
+    flex: 2;
+    margin-left: 20px;
+}
+
+#Portfolio .filaportfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.cardexp {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.gridexp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.itemform {
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+}
+
+form input[type="submit"] {
+    background: #ffc900;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #e6b800;
+}
+
+button {
+    background: #ffc900;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e6b800;
+}
+
+footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    color: #999;
+}
